@@ -1,0 +1,165 @@
+.cover-image {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cover-image .overlap-wrapper {
+  background-color: #ffffff;
+  border: 14px solid;
+  border-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cover-image .overlap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.cover-image .rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgb(250, 251, 255) 0%,
+      rgb(239.45, 241.46, 249.5) 12.5%,
+      rgb(233.47, 236.05, 246.37) 34.5%,
+      rgb(206.15, 211.34, 232.12) 48%
+  );
+}
+
+.cover-image .group {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 25%;
+}
+
+.cover-image .overlap-group {
+  position: relative;
+  height: 515px;
+}
+
+.cover-image .from-the-crazy-town {
+  position: absolute;
+  width: 253px;
+  height: 98px;
+  top: 260px;
+  left: 0;
+}
+
+.cover-image .jammerlammy {
+  position: absolute;
+  width: 286px;
+  height: 125px;
+  top: 390px;
+  left: 0;
+}
+
+.cover-image .j-axer {
+  position: absolute;
+  width: 270px;
+  height: 481px;
+  top: 34px;
+  left: 118px;
+  object-fit: cover;
+}
+
+.cover-image .nokia {
+  position: absolute;
+  width: 302px;
+  height: 412px;
+  top: 103px;
+  left: 658px;
+  object-fit: cover;
+}
+
+.cover-image .afro-thunda {
+  position: absolute;
+  width: 222px;
+  height: 481px;
+  top: 34px;
+  left: 602px;
+}
+
+.cover-image .ghost-in-the-shell {
+  position: absolute;
+  width: 435px;
+  height: 515px;
+  top: 0;
+  left: 278px;
+}
+
+.cover-image .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cover-image .LUVR {
+  position: relative;
+  align-self: stretch;
+  height: 340px;
+  margin-top: -5px;
+  margin-left: -4px;
+  text-shadow: 0px 4px 4px #00000040;
+  -webkit-text-stroke: 4px transparent;
+  background-image: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text !important;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 18.5%, rgb(255, 255, 255) 53%, rgb(0, 0, 0) 89%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Rowdies-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 128px;
+  text-align: center;
+  letter-spacing: 23px;
+  line-height: 128px;
+  text-decoration: line-through;
+}
+
+.cover-image .text-wrapper {
+  color: #000000;
+  letter-spacing: 29.44px;
+  line-height: 107px;
+}
+
+.cover-image .span {
+  color: #000000;
+  letter-spacing: 29.44px;
+  line-height: 90px;
+}
+
+.cover-image .div {
+  position: relative;
+  width: 563px;
+  height: 897px;
+  margin-top: -334px;
+  font-family: "Rowdies-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  text-align: center;
+  letter-spacing: 49px;
+  line-height: 59px;
+}
