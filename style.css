@@ -6,6 +6,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: relative; /* Make sure it's positioned relative to contain absolute children */
 }
 
 .cover-image .overlap-wrapper {
@@ -15,21 +16,13 @@
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.cover-image .overlap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-size: cover;
+  z-index: 1; /* Ensure this is above the rectangle */
 }
 
 .cover-image .rectangle {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* Ensure it covers the full viewport width */
+  height: 100vh; /* Ensure it covers the full viewport height */
   top: 0;
   left: 0;
   background: linear-gradient(
@@ -39,6 +32,17 @@
       rgb(233.47, 236.05, 246.37) 34.5%,
       rgb(206.15, 211.34, 232.12) 48%
   );
+  z-index: 0; /* Ensure this is below other content */
+}
+
+.cover-image .overlap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: 2; /* Ensure this is above the rectangle */
 }
 
 .cover-image .group {
@@ -47,6 +51,8 @@
   height: auto;
   top: 50%;
   left: 25%;
+  transform: translateY(-6.5%);
+  z-index: 3; /* Ensure this is above the overlap */
 }
 
 .cover-image .overlap-group {
@@ -112,6 +118,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 4; /* Ensure this is above all other content */
 }
 
 .cover-image .LUVR {
