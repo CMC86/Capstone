@@ -1,3 +1,10 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .cover-image {
   background-color: #ffffff;
   display: flex;
@@ -6,7 +13,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  position: relative; /* Make sure it's positioned relative to contain absolute children */
 }
 
 .cover-image .overlap-wrapper {
@@ -16,23 +22,6 @@
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: 1; /* Ensure this is above the rectangle */
-}
-
-.cover-image .rectangle {
-  position: absolute;
-  width: 100vw; /* Ensure it covers the full viewport width */
-  height: 100vh; /* Ensure it covers the full viewport height */
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-      180deg,
-      rgb(250, 251, 255) 0%,
-      rgb(239.45, 241.46, 249.5) 12.5%,
-      rgb(233.47, 236.05, 246.37) 34.5%,
-      rgb(206.15, 211.34, 232.12) 48%
-  );
-  z-index: 0; /* Ensure this is below other content */
 }
 
 .cover-image .overlap {
@@ -42,7 +31,22 @@
   top: 0;
   left: 0;
   background-size: cover;
-  z-index: 2; /* Ensure this is above the rectangle */
+}
+
+.cover-image .rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgb(250, 251, 255) 0%,
+      rgb(239.45, 241.46, 249.5) 12.5%,
+      rgb(233.47, 236.05, 246.37) 34.5%,
+      rgb(206.15, 211.34, 232.12) 48%
+  );
+  
 }
 
 .cover-image .group {
@@ -52,7 +56,6 @@
   top: 50%;
   left: 25%;
   transform: translateY(-6.5%);
-  z-index: 3; /* Ensure this is above the overlap */
 }
 
 .cover-image .overlap-group {
@@ -118,7 +121,6 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 4; /* Ensure this is above all other content */
 }
 
 .cover-image .LUVR {
