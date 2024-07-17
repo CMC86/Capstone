@@ -1,0 +1,113 @@
+/* styles.css */
+
+a, button, input, select, h1, h2, h3, h4, h5, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  menu, ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/matrix-code.jpg') repeat;
+    color: white;
+    overflow-y: scroll;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 100px 20px 20px 20px; /* Adjust padding to avoid header overlap */
+  }
+  
+  section {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .image-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #doom .image-group img {
+    max-width: 25%;
+  }
+  
+  #napster .image-group img,
+  #spongebob .image-group img {
+    max-width: 40%;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
