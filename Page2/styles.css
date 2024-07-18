@@ -18,7 +18,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
   
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: url('img/matrix-code.jpg') repeat;
     color: white;
     overflow-y: scroll;
@@ -28,7 +28,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -50,7 +50,9 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
   nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   
   .buttons {
@@ -65,6 +67,15 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
     color: white;
     border: 1px solid white;
     cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .buttons button:first-child {
+    background-color: rgba(0, 128, 0, 0.7);
+  }
+  
+  .buttons button:last-child {
+    background-color: rgba(128, 0, 0, 0.7);
   }
   
   main {
@@ -98,16 +109,17 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
   }
   
   section h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 20px 0 10px;
     font-weight: bold;
     text-transform: uppercase;
   }
   
   section p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
   }
   
