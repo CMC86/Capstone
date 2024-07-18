@@ -92,7 +92,6 @@ function applyButtonStyles() {
     });
 }
 
-
 // Function to apply main styles
 function applyMainStyles() {
     const main = document.querySelector('main');
@@ -122,6 +121,7 @@ function applyImageGroupStyles() {
     sectionImages.forEach(image => {
         image.style.maxWidth = '100%';
         image.style.height = 'auto';
+        image.style.cursor = 'pointer'; // Add cursor pointer style
     });
 
     const doomImages = document.querySelectorAll('#doom .image-group img');
@@ -158,7 +158,17 @@ function applyPStyles() {
     });
 }
 
-// Applying all styles on page load
+// Function to add click event to image
+function addImageClickEvent() {
+    const image = document.querySelector('img[src="img/58378719_10157000337381093_8030431332653858816_n.jpg"]');
+    if (image) {
+        image.addEventListener('click', function() {
+            window.open('https://www.facebook.com/koolboblove/photos/a.421054506092/10157000337376093/?type=3');
+        });
+    }
+}
+
+// Applying all styles and events on page load
 window.onload = function () {
     applyGlobalStyles();
     applyBodyStyles();
@@ -170,4 +180,5 @@ window.onload = function () {
     applyImageGroupStyles();
     applyH2Styles();
     applyPStyles();
+    addImageClickEvent();
 };
