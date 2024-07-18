@@ -11,6 +11,7 @@ function applyGlobalStyles() {
         element.style.textDecoration = 'none';
         element.style.background = 'none';
         element.style.webkitFontSmoothing = 'antialiased';
+        element.style.fontWeight = 'bold'; // Add font weight adjustment
     });
 }
 
@@ -67,11 +68,27 @@ function applyButtonStyles() {
         button.style.marginLeft = '10px';
         button.style.padding = '10px 20px';
         button.style.fontSize = '16px';
-        button.style.backgroundColor = index === 0 ? 'rgba(0, 128, 0, 0.7)' : 'rgba(128, 0, 0, 0.7)';
+        button.style.backgroundColor = index === 0 ? 'navy' : 'rgba(128, 0, 0, 0.7)';
         button.style.color = 'white';
         button.style.border = '1px solid white';
         button.style.cursor = 'pointer';
         button.style.textTransform = 'uppercase';
+        button.style.fontWeight = 'bold'; // Add font weight adjustment
+        
+        // Specific styling and functionality for "I like" button
+        if (button.id === 'likeButton') {
+            button.style.backgroundColor = 'navy'; // Navy blue background
+            button.addEventListener('click', function() {
+                window.location.href = 'https://www.youtube.com/watch?v=YeWp7MNvGxQ';
+            });
+        }
+
+        // Specific styling and functionality for "Turtles" button
+        if (button.id === 'turtleButton') {
+            button.addEventListener('click', function() {
+                window.location.href = 'https://youtu.be/CMNry4PE93Y?si=vFMtwbGQS73D5NTg&t=9';
+            });
+        }
     });
 }
 
@@ -123,7 +140,7 @@ function applyH2Styles() {
     h2s.forEach(h2 => {
         h2.style.fontSize = '28px';
         h2.style.margin = '20px 0 10px';
-        h2.style.fontWeight = 'bold';
+        h2.style.fontWeight = 'bold'; // Adjust font weight
         h2.style.textTransform = 'uppercase';
     });
 }
